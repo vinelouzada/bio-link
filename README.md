@@ -1,2 +1,2 @@
-# designer-portfolio
-A page about my graphic designer portfolio.
+# My Bio Links
+A page with my links
