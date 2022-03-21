@@ -1,9 +1,16 @@
 body{
-    background-color: #363636;
+    /*background-color: #363636;*/
+    background-image: linear-gradient(180deg,#9c2b85,#23133a);
     font-family: 'Poppins', sans-serif;
 }
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
 .content{
-    margin-top: 40px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -11,23 +18,31 @@ body{
     align-items: center;
 }
 .content-bio{
-    width: 800px;
-    height: 200px;
-    background-color: #4b4b4b;
+    width: 320px;
+    height: 500px;
+    background-color: transparent;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     border-radius: 10px;
+    backdrop-filter: blur(400px);
+    -webkit-backdrop-filter: blur(400px);
+    border: 1px solid #e16bdd;
+    transition: 1s;
 }
+
 .content-foto{
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 10px 10px;
-    width: 30%;
 }
 .sobre{
-    margin: 15px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 95%;
 }
 .img-perfil{
     width: 150px;
@@ -42,35 +57,44 @@ body{
     font-size: 22px;
     font-weight: bold;
     margin-bottom: 3px;
+    text-align: center;
 }
 .sobre span{
     font-size: 13px;
     font-weight: 400;
     color: #fff;
+    text-align: center;
 } 
-.sobre h5{
-    color: white;
-    margin-top: 20px;
-    font-weight: 300;
-}
+
 .nav-bio{
-    margin-top: 50px;
+    width: 100%;
+    margin-top: 30px;
     display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 .nav-bio li{
+    background: #461a50;
+    border-radius: 3px;
     color: #fff;
     font-weight: 400;
-    margin-right: 20px;
+    padding: 10px 0px;
+    transition: 1s;
 }
-
-a{
+.nav-bio li:hover{
+    background: transparent;
+    cursor: pointer;
+}
+.nav-bio li a{
     color: #fff;
     text-decoration: none;
     display: flex;
     align-items: center;
+    margin-left: 10px;
 }
 
+
 .fab{
-    font-size: 20px;
+    font-size: 23px;
     margin-right: 10px;
 }
